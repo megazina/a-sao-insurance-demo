@@ -1,0 +1,21 @@
+{
+  "POL-8821": {
+    "policy_id": "POL-8821",
+    "holder_name": "Zina R",
+    "products": ["comprehensive_motor", "home_building_contents"],
+    "status": "active",
+    "motor": {
+      "cover": "Comprehensive",
+      "vehicle": "2020 Subaru WRX",
+      "excess_aud": 850,
+      "animal_collision_covered": true,
+      "hire_car_entitled": true
+    },
+    "home": {
+      "address_suburb": "Manly",
+      "state": "NSW",
+      "flood_cover": "limited",
+      "flood_waiting_period_hours": 72
+    }
+  }
+}

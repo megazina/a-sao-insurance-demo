@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AussieCare | My account</title>
+  <link rel="stylesheet" href="/static/portal.css?v=2">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span class="logo">AC</span><span class="brand-name">Aussie<b>Care</b></span></a>
+    <div class="topbar-right" id="topbarRight"></div>
+  </header>
+
+  <main class="page" id="page"></main>
+
+  <button class="fab" id="fab" aria-label="Open AussieCare assistant"><span aria-hidden="true">💬</span> Ask AussieCare</button>
+
+  <aside class="drawer" id="drawer" aria-label="AussieCare Assistant" hidden>
+    <div class="drawer-head">
+      <div>
+        <div class="drawer-title">AussieCare Assistant <span class="demo-pill" id="demoPill" hidden>DEMO MODE</span></div>
+        <div class="drawer-sub" id="drawerSub"></div>
+      </div>
+      <div class="drawer-actions">
+        <select id="providerSelect" aria-label="Model provider"></select>
+        <button class="icon-btn" id="closeDrawer" aria-label="Close assistant">✕</button>
+      </div>
+    </div>
+    <div class="messages" id="messages" aria-live="polite"></div>
+    <form class="composer" id="composer">
+      <input id="input" autocomplete="off" placeholder="Ask about claims, excess, renewals…">
+      <button type="submit" id="send">Send</button>
+    </form>
+  </aside>
+
+  <div class="presenter" id="presenter">
+    <div class="presenter-panel" id="presenterPanel" hidden>
+      <div class="p-title">Presenter controls</div>
+      <div class="seg" role="group" aria-label="Assistant mode">
+        <button data-mode="normal">Normal</button>
+        <button data-mode="demo">Demo</button>
+      </div>
+      <p class="p-note" id="modeNote"></p>
+      <div class="p-sub" id="triggersTitle">Demo mode triggers</div>
+      <div class="p-triggers" id="triggers"></div>
+      <div class="p-sub p-gap">Send traces to</div>
+      <div class="p-dests" id="dests"></div>
+      <div class="p-foot">
+        <span id="tracingInfo"></span>
+        <button class="link-btn" id="resetBtn">Reset claims</button>
+      </div>
+    </div>
+    <button class="presenter-toggle" id="presenterToggle"><span class="dot" id="modeDot"></span><span id="modeLabel">Mode: Normal</span></button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+  <script src="/static/portal.js"></script>
+</body>
+</html>

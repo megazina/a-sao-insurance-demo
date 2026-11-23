@@ -1,0 +1,105 @@
+{
+  "olivia": {
+    "id": "olivia",
+    "name": "Olivia Nguyen",
+    "first_name": "Olivia",
+    "tier": "Gold",
+    "state": "NSW",
+    "address": "12 Wattle St, Surry Hills",
+    "email": "olivia.nguyen@example.com",
+    "phone": "0412 555 101",
+    "dob": "1988-04-17",
+    "tfn": "123 456 782",
+    "policies": [
+      {
+        "policy_id": "AC-H-1001", "type": "home", "product": "Home & Contents Complete",
+        "subtitle": "12 Wattle St, Surry Hills NSW", "status": "active",
+        "cover_aud": 650000, "excess_aud": 750, "premium_aud": 1480, "renews": "2027-02-01",
+        "address_suburb": "Surry Hills", "state": "NSW",
+        "flood_cover": "limited", "flood_waiting_period_hours": 72
+      },
+      {
+        "policy_id": "AC-M-1002", "type": "motor", "product": "Comprehensive Motor",
+        "subtitle": "2021 Mazda CX-5", "status": "active",
+        "cover_aud": 38000, "excess_aud": 650, "premium_aud": 1120.5, "renews": "2027-03-15",
+        "ncb_percent": 60, "vehicle": "2021 Mazda CX-5",
+        "animal_collision_covered": true, "hire_car_entitled": true
+      }
+    ],
+    "claims": [
+      {
+        "claim_id": "CL-24001", "type": "motor", "policy_id": "AC-M-1002", "loss_date": "2026-09-12",
+        "claimed_aud": 4200, "settled_aud": 3550, "status": "approved",
+        "note": "Rear-end collision, repairer assigned. Repair quote verified."
+      }
+    ]
+  },
+  "liam": {
+    "id": "liam",
+    "name": "Liam Chen",
+    "first_name": "Liam",
+    "tier": "Silver",
+    "state": "VIC",
+    "address": "8 Lygon St, Brunswick",
+    "email": "liam.chen@example.com",
+    "phone": "0412 555 102",
+    "dob": "1995-11-02",
+    "tfn": "234 567 891",
+    "policies": [
+      {
+        "policy_id": "AC-M-2001", "type": "motor", "product": "Third Party Property Motor",
+        "subtitle": "2016 Toyota Corolla", "status": "active",
+        "cover_aud": 20000000, "excess_aud": 500, "premium_aud": 612, "renews": "2027-05-30",
+        "ncb_percent": 40, "vehicle": "2016 Toyota Corolla",
+        "animal_collision_covered": false, "hire_car_entitled": false
+      }
+    ],
+    "claims": [
+      {
+        "claim_id": "CL-24055", "type": "motor", "policy_id": "AC-M-2001", "loss_date": "2026-10-28",
+        "claimed_aud": 2300, "settled_aud": null, "status": "under assessment",
+        "note": "Hit a parked car. Awaiting assessor report."
+      }
+    ]
+  },
+  "priya": {
+    "id": "priya",
+    "name": "Priya Sharma",
+    "first_name": "Priya",
+    "tier": "Platinum",
+    "state": "QLD",
+    "address": "41 Station Rd, Indooroopilly",
+    "email": "priya.sharma@example.com",
+    "phone": "0412 555 103",
+    "dob": "1979-07-23",
+    "tfn": "345 678 901",
+    "policies": [
+      {
+        "policy_id": "AC-H-3001", "type": "home", "product": "Home & Contents Complete",
+        "subtitle": "41 Station Rd, Indooroopilly QLD", "status": "active",
+        "cover_aud": 920000, "excess_aud": 1000, "premium_aud": 2210, "renews": "2027-01-20",
+        "address_suburb": "Indooroopilly", "state": "QLD",
+        "flood_cover": "limited", "flood_waiting_period_hours": 72
+      },
+      {
+        "policy_id": "AC-M-3002", "type": "motor", "product": "Comprehensive Motor",
+        "subtitle": "2023 Tesla Model 3", "status": "active",
+        "cover_aud": 62000, "excess_aud": 800, "premium_aud": 1890, "renews": "2027-04-02",
+        "ncb_percent": 70, "vehicle": "2023 Tesla Model 3",
+        "animal_collision_covered": true, "hire_car_entitled": true
+      }
+    ],
+    "claims": [
+      {
+        "claim_id": "CL-24077", "type": "home", "policy_id": "AC-H-3001", "loss_date": "2026-11-02",
+        "claimed_aud": 7800, "settled_aud": null, "status": "under assessment",
+        "note": "Storm damage to roof. Assessor booked."
+      },
+      {
+        "claim_id": "CL-24012", "type": "home", "policy_id": "AC-H-3001", "loss_date": "2026-06-18",
+        "claimed_aud": 1200, "settled_aud": 0, "status": "declined",
+        "note": "Gradual water seepage is not covered under the PDS."
+      }
+    ]
+  }
+}
